@@ -1,0 +1,361 @@
+# #NOTE: nie do konca prawidlowy przyklad wykorzystania funkcji
+# def f(x):
+#     return x**2
+#
+# print("Wpisz cyfrę.")
+# x=int(input())
+# wynik=f(x)
+#
+# print(wynik)
+
+# #NOTE: ładniejszy przykład
+#
+# def wyznacz_kwadrat(liczba):
+#     return liczba**2
+#
+# print("Wpisz cyfrę.")
+# liczba=int(input())
+# obliczony_kwadrat=wyznacz_kwadrat(liczba)
+#
+# print(obliczony_kwadrat)
+
+# #NOTE: dobrą praktyką jest umieszczennie (zakomentowanej) informacji na początku funkcji co dana funkcja robi
+#
+# def dodawanie(liczba1, liczba2):
+#     suma=liczba1+liczba2
+#     return suma
+# def mnozenie(liczba1,liczba2):
+#     iloczyn=liczba1*liczba2
+#     return iloczyn
+#
+# print("Podaj liczbę.")
+# pierwsza=int(input())
+# print("Podaj liczbę.")
+# druga=int(input())
+# suma=dodawanie(pierwsza,druga)
+# iloczyn=mnozenie(pierwsza,druga)
+#
+# print("Wynik dodawania to: ", suma)
+# print("Wynik mnożenia to: ", iloczyn)
+
+# def dziwne_dzialanie(liczba1):
+#     suma=liczba1+liczba1
+#     kwadrat=suma**2
+#     wynik=kwadrat-1
+#     return wynik
+#
+# print("Podaj liczbę.")
+# pierwsza=float(input())
+# wynik=dziwne_dzialanie(pierwsza)
+# print("Wynikiem skomplikowanego działania jest: ", wynik)
+
+# #NOTE: zad 1
+# def odejmowanie(x,y):
+#     roznica=x-y
+#     return roznica
+#
+# print("Podaj pierwszą liczbę.")
+# liczba1=int(input())
+# print("Podaj drugą liczbę.")
+# liczba2=int(input())
+#
+# wynik=odejmowanie(liczba1,liczba2)
+# print(wynik)
+
+# #NOTE: zad 2
+# def ostatni(lista):
+#     ostatnia=lista[-1]
+#     return ostatnia
+#
+# lista=[]
+# print("Podaj 5 elementów listy.")
+# for i in range(5):
+#     element=input()
+#     lista.append(element)
+#
+# wynik=ostatni(lista)
+# print("Ostatni element listy to", wynik )
+
+# #NOTE: zad 3
+# def ogon(lista):
+#     return lista[1:]
+#
+# lista=[]
+# print("Podaj element listy.")
+# for i in range(5):
+#     element=input()
+#     lista.append(element)
+#
+# ogon=ogon(lista)
+# print("Ogon tej listy to", ogon)
+
+# #NOTE: zad 4
+# def dlugosc(lista):
+#     suma=0
+#     for element in lista:
+#         suma+=1
+#     return suma
+#
+# lista=[]
+# print("Podaj elementy listy. Gdy chcesz zakończyć, kliknij q.")
+# while True:
+#     element=input()
+#     if element=="q":
+#         break
+#     else:
+#         lista.append(element)
+# dlugosc=dlugosc(lista)
+# print("Długość podanej listy to" ,dlugosc)
+
+# #NOTE: zad 5
+# def maksimum(lista):
+#     dlugosc=0
+#     for element in lista:
+#         dlugosc+=1
+#     najwieksza=lista[0]
+#     for i in range(dlugosc):
+#         if najwieksza<lista[i]:
+#             najwieksza=lista[i]
+#     return najwieksza
+# lista=[]
+# print("Podaj elementy listy. Gdy chcesz zakończyć, kliknij q.")
+# while True:
+#     element=input()
+#     if element=="q":
+#         break
+#     else:
+#         lista.append(int(element))
+# najwieksza=maksimum(lista)
+# print("Największy element listy to" ,najwieksza)
+#
+# #NOTE: zad 6
+# def nta(lista,n):
+#     return lista[n]
+#
+# lista=[]
+# print("Podaj elementy listy. Gdy chcesz zakończyć, kliknij q.")
+# while True:
+#     element=input()
+#     if element=="q":
+#         break
+#     else:
+#         lista.append(element)
+#
+# print("Podaj który element listy mam wyświetlić")
+# n=int(input())
+# n=n-1
+# elemeent=nta(lista,n)
+# print(elemeent)
+
+# #NOTE: zad 7
+# def alternatywa(x,y):
+#     if (x==1 or x==0) and (y==1 or y==0):
+#         return x or y
+#     else:
+#         print("Liczby mają nieprawidłową wartość.")
+#
+# print("Podaj wartość zdania 1.")
+# wart1=int(input())
+# print("Podaj wartość zdania 2.")
+# wart2=int(input())
+#
+# alternatywa=alternatywa(wart1,wart2)
+# print("Alternatywa tych zdań wynosi", alternatywa)
+
+# #NOTE: zad 8
+# def koniunkcja(x,y):
+#     if (x==1 or x==0) and (y==1 or y==0):
+#         return x and y
+#     else:
+#         print("Liczby mają nieprawidłową wartość.")
+#
+# print("Podaj wartość zdania 1.")
+# wart1=int(input())
+# print("Podaj wartość zdania 2.")
+# wart2=int(input())
+#
+# koniunkcja=koniunkcja(wart1,wart2)
+# print("Koniunkcja tych zdań wynosi", koniunkcja)
+
+# #NOTE: zad 9
+# def implikacja(x,y):
+#     if (x==1 or x==0) and (y==1 or y==0):
+#         if (x==0 or x==1) and y==1:
+#             return 1
+#         elif x==0 and y==0:
+#             return 1
+#         elif x==1 and y==0:
+#             return 0
+#     else:
+#         print("Liczby mają nieprawidłową wartość.")
+#
+# print("Podaj wartość zdania 1.")
+# wart1=int(input())
+# print("Podaj wartość zdania 2.")
+# wart2=int(input())
+#
+# implikacja=implikacja(wart1,wart2)
+# print("implikacja tych zdań wynosi", implikacja)
+
+# #NOTE: zad 10
+#
+# def kwadratoszescian(liczba, slowo):
+#     if slowo=="kwadrat":
+#         wynik=liczba**2
+#         return wynik
+#     elif slowo=="sześcian":
+#         wynik=liczba**3
+#         return wynik
+#
+# print("Podaj liczbę.")
+# liczba=int(input())
+# print("Wpisz \"kwadrat\", jeśli chcesz podnieść liczbę do kwadratu lub"
+#       "\"sześcian\", jeśli chcesz podnieść liczbę do sześcianu")
+# slowo=input()
+# if slowo=="kwadrat" or slowo=="sześcian":
+#     wynik=kwadratoszescian(liczba, slowo)
+#     print(wynik)
+# else:
+#     print("Podano niepoprawne słowo.")
+
+# #NOTE: zad 11
+#
+# def dzien_tyg(liczba):
+#     dni_tygodnia=["Poniedziałek","Wtorek","Środa","Czwartek","Piątek",
+#                   "Sobota","Niedziela"]
+#     if liczba>7 or liczba<1:
+#         print("Liczba jest niepoprawna.")
+#     else:
+#         dzien=dni_tygodnia[liczba-1]
+#         return dzien
+#
+# print("Podaj numer dnia w tygodniu.")
+# liczba=int(input())
+# dzien=dzien_tyg(liczba)
+# print(dzien)
+
+# #NOTE: zad 12
+#
+# def gwiazdki(liczba):
+#     ciag=""
+#     lista=[]
+#     for i in range(liczba):
+#         lista.append("*")
+#     ciag="".join(lista)
+#     return ciag
+#
+# print("Ile gwiazdek mam zwrócić?")
+# liczba=int(input())
+# gwiazdki=gwiazdki(liczba)
+# print(gwiazdki)
+
+# #NOTE: zad 13
+#
+# def czy_parzysta(liczba):
+#     if liczba%2==0:
+#         wynik="To jest parzysta liczba."
+#     else:
+#         wynik="To nie jest parzysta liczba."
+#     return wynik
+#
+# print("Podaj liczbę.")
+# liczba=int(input())
+# wynik=czy_parzysta(liczba)
+# print(wynik)
+
+# #NOTE: zad 14
+#
+# def sumowanko(liczba):
+#     suma=0
+#     for i in range(0,liczba+1):
+#         suma+=i
+#     return suma
+#
+# print("Podaj liczbę.")
+# liczba=int(input())
+# wynik=sumowanko(liczba)
+# print(f"Wynik sumowania od 1 do {liczba} to {wynik}.")
+
+# #NOTE: zad 15
+#
+# import random
+#
+# def suma(liczba):
+#     wynik=liczba+1
+#     return wynik
+#
+# def roznica(liczba):
+#     wynik=liczba-1
+#     return wynik
+#
+# def dzielenie(liczba):
+#     wynik=liczba/2
+#     return wynik
+#
+# def mnozenie(liczba):
+#     wynik=liczba*2
+#     return wynik
+#
+# def potegowanie(liczba):
+#     wynik=liczba**2
+#     return wynik
+#
+# liczba=random.randint(0,4)
+# if liczba==0:
+#     dzialanie=suma(liczba)
+#     print(dzialanie)
+# elif liczba==1:
+#     dzialanie=roznica(liczba)
+#     print(dzialanie)
+# elif liczba==2:
+#     dzialanie=dzielenie(liczba)
+#     print(dzialanie)
+# elif liczba==3:
+#     dzialanie=mnozenie(liczba)
+#     print(dzialanie)
+# elif liczba==4:
+#     dzialanie=potegowanie(liczba)
+#     print(dzialanie)
+
+#NOTE: zad 16
+
+def sprawdz_dol(liczba):
+    if liczba>10:
+        wynik="Podana liczba jest większa od 10."
+    else:
+        wynik="Podana liczba jest mniejsza bądź równa 10."
+    return wynik
+
+def sprawdz_gore(liczba):
+    if liczba<100:
+        wynik="Podana liczba jest mniejsza od 100."
+    else:
+        wynik="Podana liczba jest większa bądź równa 100."
+    return wynik
+
+def pierwiastkuj(liczba):
+    wynik=liczba**0.5
+    return wynik
+
+def dodaj_dwa(liczba):
+    liczba=pierwiastkuj(liczba)
+    wynik=liczba+2
+    return wynik
+
+def do_potegi(liczba):
+    liczba=dodaj_dwa(liczba)
+    wynik=liczba**2
+    return wynik
+
+def wyswietl(liczba):
+    wynik=do_potegi(liczba)
+    return "Początkowa liczba to "+str(liczba)+". Końcowa liczba to "+str(wynik)
+
+print("Podaj liczbę.")
+liczba=int(input())
+dol=sprawdz_dol(liczba)
+gora=sprawdz_gore(liczba)
+wynik=wyswietl(liczba)
+print(dol)
+print(gora)
+print(wynik)
