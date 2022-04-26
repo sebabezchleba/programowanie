@@ -1,0 +1,137 @@
+####1.
+####Napisz funkcje ostatni(x), która zwraca ostatni element listy (rekurencyjnie)
+##def ostatni(lista):
+##    if len(lista)>1:
+##        return ostatni(lista[1:])
+##    else:
+##        return lista[0]
+##        
+##
+##lista=[1,2,3,4,5,6,7]
+##print(ostatni(lista))
+####2.
+####Napisz funkcje ogon(x), która zwraca wszystko poza pierwszym elementem
+####listy (rekurencyjnie)
+##def ogon(lista):
+##   if len(lista) > 1:
+##       return [lista[1]]+ogon(lista[1:])
+##   else:
+##       return []
+
+##print("Ogon:",ogon(lista))
+####3.
+####Napisz funkcje maksimum(x), i minimum(x), które zwracają maksymalny i
+####minimalny element listy (rekurencyjnie)
+##def maksimum(lista,najwiekszy=5):
+##    if len(lista)>0:
+##        if lista[0]>najwiekszy:
+##            najwiekszy=lista[0]
+##        return maksimum(lista[1:],najwiekszy)
+##    else:
+##        return najwiekszy
+##    
+##def minimum(x,najmniejszy=5):
+##    if len(x)>0:
+##        if najmniejszy>x[0]:
+##            najmniejszy=lista[0]
+##        return minimum(x[1:],najmniejszy)
+##    else:
+##        return najmniejszy
+##print("Minimum:",minimum(lista))
+##print("Maksimum:",maksimum(lista))
+####4.
+####Napisz funkcje dlugosc(x), która zwraca wielkość listy (rekurencyjnie)
+##def dlugosc(x):
+##    if x==[]:
+##        return 0
+##    else:
+##        return 1+dlugosc(x[1:])
+##
+##print("Długość:",dlugosc(lista))
+##
+####5.
+####Napisz funkcje nta(x), która zwraca n-ty element listy (rekurencyjnie)
+##def nta(lista,n):
+##    if len(lista)>n:
+##        if n==0:
+##            return lista[0]
+##        return nta(lista[1:],n-1)
+##        
+##    else:
+##        return "Lista nie ma tylu elementów"
+##print("Który element listy wyświetlić?")
+##n=int(input())
+##print(nta(lista,n))
+####6.
+####Napisz funkcję, która sprawdza, czy dany element znajduje się na liście
+####(rekurencyjnie)
+##def czywliscie(lista, dospr):
+##    if len(lista)>0:
+##        if lista[0]==dospr:
+##            return "TAK"
+##        else:
+##            return czywliscie(lista[1:],dospr)
+##    else:
+##        return "NIE"
+##print("Czy w liście",czywliscie(lista,8))
+##7.
+##Napisz funkcję, która wyznacza n-tą (n jest liczba naturalną) potęgę zadanej
+##liczby x (rekurencyjnie)
+##def ntaPotega(x,n):
+##    if n==0:
+##        return 1
+##    if n>=1:
+##        return int(x) * ntaPotega(x,n-1)
+##
+##
+##print("Podaj liczbę x:")
+##x=input()
+##print("Podaj liczbę naturalną (potęgę):")
+##n=int(input())
+##print(ntaPotega(x,n))
+##
+####8.
+####Napisz funkcję, która wyznacza silnię z podanej liczby (rekurencyjnie)
+##def silnia(x):
+##    if x>1:
+##        return int(x)*silnia(x-1)
+##    else:
+##        return 1
+##
+##print("Podaj liczbę do silni:")
+##x=int(input())
+##print(silnia(x))
+
+##9.
+##Napisz funkcję, która wypisuje sumę dwóch liczb
+##def suma(liczba1,liczba2):
+##    print(liczba1+liczba2)
+##    return 0
+##suma(3,4)
+####10.
+####Napisz funkcję, która zwraca sumę dwóch liczb
+##def suma2(liczba1,liczba2):
+##    return liczba1+liczba2
+##print(suma2(3,4))
+    
+##11.
+##Przygotuj program ”kalkulator”, tym razem każde działanie powinno być
+##wykonywane przez inną funkcję, tzn. program powinien zawierać funkcję
+##”dodawanie”, ”odejmowanie”, itp...
+##12.
+##Napisz funkcję, która pyta o dwie liczby i mówi czy są one równe a jeśli nie to
+##mówi jaka jest różnica między nimi.
+##13.
+##Napisz funkcję, która pobiera dwie listy a następnie zwraca je połączone
+##14.
+##Napisz funkcję, która pobiera dwie listy, następnie zwraca je połączone,
+##jednak tak, aby ich elementy się nie powtarzały
+##15.
+##Napisz funkcję, która pobiera liczbę i zwraca jej pierwiastek zaokrąglony do
+##dwóch miejsc po przecinku oraz informację o tym czy jest parzysta
+##16.
+##Napisz funkcję, która pobiera listę wypełnioną liczbami i zwraca długość listy
+##oraz jej największy element
+##17.
+##Dla chętnych: kółko i krzyżyk
+##
