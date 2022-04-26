@@ -286,3 +286,15 @@
 #
 # podanalista = [1,5,8,2,0,3,45,16,2]
 # print(dlugoscimax(podanalista))
+
+
+def rownosc():
+  print("podaj dwie liczby do porownania")
+  pierwsza = int(input())
+  druga = int(input())
+  if pierwsza == druga:
+    return "Takie same"
+  else:
+    print("różnica wynosi:", abs((pierwsza-druga)))
+    
+rownosc()
